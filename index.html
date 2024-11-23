@@ -17,11 +17,12 @@
     </head>
     <body>
         <h1>Youth Empowerment Motivation</h1>
-        <p>You are Powerful,Capible and full of potential.Belive in your voice, dreams, and your ability to make a difference.The world needs you!</p>
+        <p>You are Powerful, Capable, and full of potential. Believe in your voice, dreams, and your ability to make a difference. The world needs you!</p>
 
         <img src="https://www.creativefabrica.com/wp-content/uploads/2023/03/02/Pixel-art-vector-robot-design-mascot-Graphics-62977141-2-580x387.jpg">
 
-        <blockquote>"In the end, we only regret the chances we didn’t take.” </blockquote>
+        <blockquote id="motivationText">"In the end, we only regret the chances we didn’t take."</blockquote>
+
         <button onclick="changeMotivation()">Change Motivation</button>
 
         <script>
@@ -31,14 +32,15 @@
                 var Motivations = [
                     "Talent wins games, but teamwork and intelligence wins championships.",
                     "You miss 100% of the shots you don't take.",
-                    "Everything you've ever wanted is sitting on the other side of fear."                
+                    "Everything you've ever wanted is sitting on the other side of fear."
                 ];
 
-                var blockmotivation = document.querySelector("blockmotivation");
-                blockmotivation.innerHTML = motivation[index];
+                var blockmotivation = document.getElementById("motivationText");
+                blockmotivation.innerHTML = Motivations[index];
 
                 index++;
-                if (index >= 4) {
+               
+                if (index >= 3) {
                     index = 0;
                 }
             }
