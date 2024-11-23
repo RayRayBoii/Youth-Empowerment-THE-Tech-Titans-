@@ -21,20 +21,20 @@
 
         <img src="https://wallpapers.com/images/hd/stephen-curry-1080-x-1350-picture-ctkmwsmzn5rm5cu7.jpg">
 
-        <blockquote>"Success is not an accident, success is actually a choice." - Steph Curry</blockquote>
-        <button onclick="changeQuote()">Change Quote</button>
+        <blockquote>"Success is not an accident, success is actually a choice." - Steph Curry</blockmotivation>
+        <button onclick="changeMotivation()">Change Quote</button>
 
         <script>
             var index = 0;
 
-            function changeQuote() {
-                var quotes = [
+            function changeMotivation() {
+                var Motivations = [
                     `"Talent wins games, but teamwork and intelligence wins championships." - Michel Jordan`,
                     `"You miss 100% of the shots you don't take." - Wayne Gretzky`,
                 ];
 
-                var blockquote = document.querySelector("blockquote");
-                blockquote.innerHTML = quotes[index];
+                var blockmotivation = document.querySelector("blockmotivation");
+                blockmotivation.innerHTML = motivation[index];
 
                 index++;
                 if (index >= 4) {
